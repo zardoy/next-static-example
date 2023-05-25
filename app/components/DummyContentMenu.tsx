@@ -1,7 +1,7 @@
 'use client'
 import { random } from 'superb'
 import { IndexButton } from '../IndexButton'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import MenuContentWrap from './MenuContentWrap'
 import { TextField } from '@mui/material'
 
