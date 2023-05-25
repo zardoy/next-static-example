@@ -1,5 +1,6 @@
 'use client'
 import { Icon } from '@iconify/react'
-export default ({ children }) => {
-    return <Icon icon={children} />
+import React from 'react'
+export default ({ children, ...props }: { children } & Omit<React.ComponentProps<typeof Icon>, 'icon' | 'children'>) => {
+    return <Icon {...props} icon={children} />
 }
