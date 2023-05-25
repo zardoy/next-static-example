@@ -1,6 +1,6 @@
 //@ts-check
 let basePath = process.env.GITHUB_REPOSITORY?.split('/')[1]
-basePath &&= `/${basePath}/`
+basePath &&= `/${basePath}`
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: false,
